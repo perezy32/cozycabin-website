@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Experience | Cozy Cabin & Co Interiors</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">COZY CABIN & CO INTERIORS</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html" class="active">The Experience</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="shop.html">Collection</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+<h1>The Experience</h1>
+
+<p>
+A strategic approach to luxury interior design and bespoke furniture creation.
+</p>
+
+</section>
+
+
+
+<!-- COMPANY INTRO -->
+
+<section class="intro">
+
+<h2>About Cozy Cabin Interiors Ltd</h2>
+
+<p>
+Cozy Cabin Interiors Ltd is a Lagos-based studio specializing in luxury interior design and custom-made furniture, creating elegant residential and commercial spaces throughout Nigeria.
+</p>
+
+<p>
+Our work is rooted in precision, structure, and refined aesthetics. Every project is approached strategically from spatial planning to final installation ensuring functionality, durability, and timeless appeal.
+</p>
+
+<p>
+We serve a diverse client base ranging from private homeowners to hospitality developers and corporate brands. Regardless of project size or budget range, our commitment to excellence remains constant.
+</p>
+
+</section>
+
+
+
+<!-- VISION & MISSION -->
+
+<section class="portfolio-preview">
+
+<h2>Vision & Mission</h2>
+
+<div class="vision-grid">
+
+<div class="vision-card">
+
+<h3>Vision</h3>
+
+<p>
+To become the foremost luxury interior design and bespoke furniture studio in Nigeria, renowned for transforming residential and commercial spaces into exquisite and functional works of art that reflect the unique tastes and lifestyles of our clients.
+</p>
+
+</div>
+
+
+<div class="vision-card">
+
+<h3>Mission</h3>
+
+<p>
+Our mission is to deliver exceptional interior design and custom-made furniture solutions that blend creativity, craftsmanship, and quality. We are committed to understanding our clients’ needs and providing personalized services that elevate their living and working environments.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- COMPANY PHILOSOPHY -->
+
+<section class="intro">
+
+<h2>Our Philosophy</h2>
+
+<p>
+Beyond design, we curate and produce made-to-order furniture crafted to complement luxury interiors. Each piece is designed with attention to detail, material integrity, and long-term value.
+</p>
+
+<p>
+At Cozy Cabin Interiors Ltd, we do not simply furnish spaces — we build environments that elevate experience, performance, and investment value.
+</p>
+
+</section>
+
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Contact</h3>
+
+<p>+234 607 123 4667</p>
+<p>info@cozycabin.ng</p>
+<p>Lagos, Nigeria</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p><a href="index.html">Home</a></p>
+<p><a href="portfolio.html">Portfolio</a></p>
+<p><a href="shop.html">Collection</a></p>
+
+</div>
+
+
+<div>
+
+<h3>Consultation</h3>
+
+<p>Book a private design consultation.</p>
+
+<a href="contact.html" class="primary-btn">Book Now</a>
+
+</div>
+
+</div>
+
+<p class="copyright">© 2026 Cozy Cabin & Co Interiors</p>
+
+</footer>
+
+
+<script>
+
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(section => {
+
+const position = section.getBoundingClientRect().top;
+const screenPosition = window.innerHeight / 1.2;
+
+if(position < screenPosition){
+section.classList.add("visible");
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

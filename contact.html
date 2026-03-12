@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">COZY CABIN & CO INTERIORS</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">The Experience</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="shop.html">Collection</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="page-hero">
+
+<h1>Book a Consultation</h1>
+
+<p>Discuss your residential or commercial project with our design team.</p>
+
+</section>
+
+
+
+<section class="text-section">
+
+<p>📞 +234 607 123 4667</p>
+<p>📧 info@cozycabin</p>
+<p>📍 Lagos, Nigeria</p>
+
+</section>
+
+<a href="https://wa.me/2346071234667" class="whatsapp-chat" target="_blank">
+💬
+</a>
+
+<script>
+
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(section => {
+
+const position = section.getBoundingClientRect().top;
+const screenPosition = window.innerHeight / 1.2;
+
+if(position < screenPosition){
+section.classList.add("visible");
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

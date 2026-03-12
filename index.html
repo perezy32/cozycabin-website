@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cozy Cabin & Co Interiors</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">COZY CABIN & CO INTERIORS</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">The Experience</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="shop.html">Collection</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>Where Luxury Meets Comfort</h1>
+
+<p>
+Cozy Cabin & Co Interiors is a premier interior design studio crafting refined residential and sophisticated commercial spaces.
+</p>
+
+<div class="hero-buttons">
+
+<a href="portfolio.html" class="primary-btn">Explore Our Portfolio</a>
+
+<a href="contact.html" class="secondary-btn">Book a Private Consultation</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<h2>A Sophisticated Approach to Timeless Interiors</h2>
+
+<p>
+At Cozy Cabin & Co Interiors, true luxury is found in thoughtful detail. We design interiors that reflect refined taste, functionality, and timeless elegance.
+</p>
+
+<a href="about.html" class="primary-btn">Learn More</a>
+
+</section>
+
+
+<!-- PORTFOLIO PREVIEW -->
+
+<section class="portfolio-preview">
+
+<h2>Selected Works</h2>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-item">
+<img src="images/portfolio/p1.jpg" alt="Interior Project">
+</div>
+
+<div class="portfolio-item">
+<img src="images/portfolio/p2.jpg" alt="Interior Project">
+</div>
+
+<div class="portfolio-item">
+<img src="images/portfolio/p3.jpg" alt="Interior Project">
+</div>
+
+<div class="portfolio-item">
+<img src="images/portfolio/p4.jpg" alt="Interior Project">
+</div>
+
+</div>
+
+<a href="portfolio.html" class="primary-btn">View Our Portfolio</a>
+
+</section>
+
+
+<!-- 3D VISUALIZATION SECTION -->
+
+<section class="intro">
+
+<h2>3D Visualization & Design Development</h2>
+
+<p>
+Our design team produces high quality 3D visualizations and technical design
+concepts that allow clients to experience their interiors before execution begins.
+</p>
+
+</section>
+
+
+<section class="portfolio-grid">
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render1.jpg" alt="3D Render">
+</div>
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render2.jpg" alt="3D Render">
+</div>
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render3.jpg" alt="3D Render">
+</div>
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render4.jpg" alt="3D Render">
+</div>
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render5.jpg" alt="3D Render">
+</div>
+
+<div class="portfolio-item">
+<img src="/cozycabin-website/images/renders/render6.jpg" alt="3D Render">
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Contact</h3>
+
+<p>+234 607 123 4667</p>
+<p>info@cozycabin.ng</p>
+<p>Lagos, Nigeria</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p><a href="index.html">Home</a></p>
+<p><a href="about.html">The Experience</a></p>
+<p><a href="portfolio.html">Portfolio</a></p>
+
+</div>
+
+
+<div>
+
+<h3>Consultation</h3>
+
+<p>Book a private design consultation.</p>
+
+<a href="contact.html" class="primary-btn">Book Now</a>
+
+</div>
+
+</div>
+
+<p class="copyright">© 2026 Cozy Cabin & Co Interiors</p>
+
+</footer>
+
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/2346071234667" class="whatsapp-chat" target="_blank">
+💬
+</a>
+
+
+<!-- SCROLL ANIMATION SCRIPT -->
+
+<script>
+
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(section => {
+
+const position = section.getBoundingClientRect().top;
+const screenPosition = window.innerHeight / 1.2;
+
+if(position < screenPosition){
+section.classList.add("visible");
+}
+
+});
+
+});
+
+</script>
+
+
+</body>
+</html>
