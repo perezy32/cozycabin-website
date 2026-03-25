@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Decor pieces | Cozy Cabin & Co Interiors</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">COZY CABIN & CO INTERIORS</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Experience</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html" class="active">Collection</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <p class="section-tag">The CC Collection</p>
+  <h1>Decor Pieces </h1>
+  <p>
+    Distinctive accent pieces selected to complete refined interiors with character, balance, and visual warmth.
+  </p>
+</section>
+
+<!-- INTRO -->
+<section class="intro intro-narrow fade-section">
+  <h2>Finishing Touches with Purpose</h2>
+  <p>
+    Our accent furniture collection is curated to bring subtle depth and personality into a space. Each piece is chosen to complement the overall interior while adding form, elegance, and a sense of completion.
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-grid fade-section">
+  <img src="images/collections/5/img1.jpg" alt="Accent furniture image 1">
+  <img src="images/collections/5/img2.jpg" alt="Accent furniture image 2">
+</section>
+
+<!-- CTA -->
+<section class="soft-section fade-section">
+  <div class="section-head">
+    <p class="section-tag">Custom Orders</p>
+    <h2>Selected to Complete the Interior</h2>
+    <p>
+      Our accent pieces can be specified to align with your design style, project scale, and overall interior direction.
+    </p>
+  </div>
+
+  <div class="hero-buttons" style="justify-content:center;">
+    <a href="contact.html" class="primary-btn">Request Consultation</a>
+    <a href="shop.html" class="secondary-btn" style="color:var(--text-dark); border-color:var(--line);">Back to Collection</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h3>Contact</h3>
+      <p>+234 607 123 4667</p>
+      <p>info@cozycabin.ng</p>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">The Experience</a></p>
+      <p><a href="portfolio.html">Portfolio</a></p>
+      <p><a href="shop.html">Collection</a></p>
+    </div>
+
+    <div>
+      <h3>Consultation</h3>
+      <p>Book a private design consultation.</p>
+      <a href="contact.html" class="primary-btn">Book Now</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 Cozy Cabin & Co Interiors. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/2346071234667" class="whatsapp-chat" target="_blank">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+
+    if (position < screenPosition) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
