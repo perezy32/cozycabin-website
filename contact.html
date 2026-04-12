@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | cozy cabin & co</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">COZY CABIN & CO</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Experience</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html">Shop Now</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Book a Private Consultation</h1>
+  <p>
+    Discuss your residential, hospitality, or commercial project with our design team.
+  </p>
+</section>
+
+<section class="split-section fade-section">
+  <div class="split-text">
+    <h2>Start Your Project With Us</h2>
+
+    <p>
+      Whether you are planning a private residence, hospitality project, or commercial environment, our team is ready to guide you through a refined and structured design process.
+    </p>
+
+    <div class="contact-details">
+      <p><strong>Phone:</strong> +234 902 959 4100</p>
+      <p><strong>Email:</strong> info@cozycabinspaces.com</p>
+      <p><strong>Location:</strong> Lagos, Nigeria</p>
+    </div>
+
+    <a href="https://wa.me/2349029594100" class="primary-btn" target="_blank" rel="noopener">
+      Chat on WhatsApp
+    </a>
+  </div>
+
+  <div class="contact-form">
+    <h3>Send Us a Message</h3>
+
+    <p style="margin-bottom:20px;">
+      For faster response, contact us directly via WhatsApp or Email.
+    </p>
+
+    <a href="https://wa.me/2349029594100" class="primary-btn" target="_blank" rel="noopener">
+      Chat on WhatsApp
+    </a>
+
+    <br><br>
+
+    <a href="mailto:info@cozycabinspaces.com" class="secondary-btn">
+      Send Email
+    </a>
+  </div>
+</section>
+
+<section class="testimonial-section fade-section">
+  <div class="section-head">
+    <h2>A Studio Built on Elegance, Structure, and Care</h2>
+  </div>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>
+        “The process felt clear and refined from the beginning. The final direction gave us confidence in the quality of the project.”
+      </p>
+      <span>Dr Seth Akemu</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “What stood out was the thoughtful balance between luxury and practicality. The studio understood the mood we wanted.”
+      </p>
+      <span>Mrs Onomen Aroture</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “Their approach felt structured, polished, and highly intentional. It was clear we were dealing with a professional design brand.”
+      </p>
+      <span>Hospitality Project, Lagos</span>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section fade-section">
+  <div class="dark-section-inner">
+    <h2>Luxury Interiors Delivered with Precision</h2>
+
+    <p>
+      We create spaces that combine elegance, structure, and functionality tailored to your lifestyle, project goals, and brand direction.
+    </p>
+
+    <a href="https://wa.me/2349029594100" class="primary-btn" target="_blank" rel="noopener">
+      Start a Conversation
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>cozy cabin & co</h3>
+      <p>+234 902 959 4100</p>
+      <p>info@cozycabinspaces.com</p>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">The Experience</a></p>
+      <p><a href="portfolio.html">Portfolio</a></p>
+      <p><a href="shop.html">Shop Now</a></p>
+    </div>
+
+    <div>
+      <h3>Consultation</h3>
+      <p>Book a private design consultation.</p>
+      <a href="contact.html" class="primary-btn">Book Now</a>
+    </div>
+  </div>
+
+  <p class="copyright">©️ 2026 cozy cabin & co. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/2349029594100" class="whatsapp-chat" target="_blank" rel="noopener">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+
+    if (position < screenPosition) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

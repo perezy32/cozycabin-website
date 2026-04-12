@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dining | cozy cabin & co</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">COZY CABIN & CO</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Experience</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html" class="active">Shop Now</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Dining</h1>
+  <p>
+    Dining pieces curated to elevate gathering spaces with elegance, warmth, and refined presence.
+  </p>
+</section>
+
+<section class="intro intro-narrow fade-section">
+  <h2>Where Dining Meets Design</h2>
+  <p>
+    Our dining collection is designed to bring people together in spaces that feel both luxurious and inviting. Each piece balances function with visual impact, creating a setting that enhances everyday living and special moments.
+  </p>
+</section>
+
+<section class="gallery-grid fade-section">
+  <img src="images/collections/3/img1.jpg" alt="Dining collection 1">
+  <img src="images/collections/3/img2.jpg" alt="Dining collection 2">
+  <img src="images/collections/3/img3.jpg" alt="Dining collection 3">
+  <img src="images/collections/3/img4.jpg" alt="Dining collection 4">
+  <img src="images/collections/3/img5.jpg" alt="Dining collection 5">
+  <img src="images/collections/3/img6.jpg" alt="Dining collection 6">
+  <img src="images/collections/3/img7.jpg" alt="Dining collection 7">
+  <img src="images/collections/3/img8.jpg" alt="Dining collection 8">
+</section>
+
+<section class="soft-section fade-section">
+  <div class="section-head">
+    <h2>Crafted for Your Space</h2>
+    <p>
+      Our dining pieces can be tailored to match your interior concept, from material selection to sizing and finishing.
+    </p>
+  </div>
+
+  <div class="hero-buttons" style="justify-content:center;">
+    <a href="contact.html" class="primary-btn">Request Consultation</a>
+    <a href="shop.html" class="secondary-btn" style="color:var(--text-dark); border-color:var(--line);">Back to Collection</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h3>cozy cabin & co</h3>
+      <p>+234 902 959 4100</p>
+      <p>info@cozycabinspaces.com</p>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">The Experience</a></p>
+      <p><a href="portfolio.html">Portfolio</a></p>
+      <p><a href="shop.html">Shop Now</a></p>
+    </div>
+
+    <div>
+      <h3>Consultation</h3>
+      <p>Book a private design consultation.</p>
+      <a href="contact.html" class="primary-btn">Book Now</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 cozy cabin & co. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/2349029594100" class="whatsapp-chat" target="_blank">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+
+    if (position < screenPosition) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

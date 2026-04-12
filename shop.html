@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The CC Collection | cozy cabin & co</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">COZY CABIN & CO</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Experience</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html" class="active">Shop Now</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <p class="section-tag">The CC Collection</p>
+  <h1>Curated Pieces for Refined Interiors</h1>
+  <p>
+    Explore a considered collection of furniture and décor pieces selected to complement elegant residential, hospitality, and commercial spaces.
+  </p>
+</section>
+
+<!-- COLLECTION GRID -->
+<section class="collection-grid">
+
+  <div class="collection-card fade-section">
+    <a href="sofas.html">
+      <img src="images/collections/1/img1.jpg" alt="Sofas collection">
+      <div class="collection-overlay">
+        <h3>Sofas</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="collection-card fade-section">
+    <a href="bedroom.html">
+      <img src="images/collections/2/img1.jpg" alt="Bedframes collection">
+      <div class="collection-overlay">
+        <h3>Bedframes</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="collection-card fade-section">
+    <a href="dining.html">
+      <img src="images/collections/3/img1.jpg" alt="Dining collection">
+      <div class="collection-overlay">
+        <h3>Dining</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="collection-card fade-section">
+    <a href="lighting.html">
+      <img src="images/collections/4/img1.jpg" alt="Lighting collection">
+      <div class="collection-overlay">
+        <h3>Lighting</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="collection-card fade-section">
+    <a href="accent.html">
+      <img src="images/collections/5/img1.jpg" alt="Decor pieces collection">
+      <div class="collection-overlay">
+        <h3>Decor Pieces</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="collection-card fade-section">
+    <a href="hospitality.html">
+      <img src="images/collections/6/img1.jpg" alt="Hospitality orders collection">
+      <div class="collection-overlay">
+        <h3>Hospitality Orders</h3>
+      </div>
+    </a>
+  </div>
+
+</section>
+
+<!-- PROJECT SUPPORT -->
+<section class="intro intro-narrow fade-section">
+  <p class="section-tag">Project Support</p>
+  <h2>Hospitality & Bulk Orders</h2>
+
+  <p>
+    For hotels, serviced apartments, and commercial projects, cozy cabin & co offers bulk procurement and custom fabrication tailored to project specifications.
+  </p>
+
+  <a href="contact.html" class="primary-btn">Request Consultation</a>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section fade-section">
+  <div class="section-head">
+    <p class="section-tag">Client Testimonials</p>
+    <h2>Crafted for Spaces That Need Presence</h2>
+  </div>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>
+        “The collection felt curated, elegant, and well suited to the type of atmosphere we wanted to create.”
+      </p>
+      <span>Dr Seth Akemu</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “The pieces had a refined look and worked beautifully with the interior direction of the project.”
+      </p>
+      <span>Mrs Onomen Aroture</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “What stood out was the quality of presentation and the consistency in the overall visual style.”
+      </p>
+      <span>Hospitality Project. Lagos</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h3>cozy cabin & co</h3>
+      <p>+234 902 959 4100</p>
+      <p>info@cozycabinspaces.com</p>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">The Experience</a></p>
+      <p><a href="portfolio.html">Portfolio</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h3>Consultation</h3>
+      <p>Book a private design consultation.</p>
+      <a href="contact.html" class="primary-btn">Book Now</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">©️ 2026 cozy cabin & co. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/2349029594100" class="whatsapp-chat" target="_blank">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+
+    if (position < screenPosition) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

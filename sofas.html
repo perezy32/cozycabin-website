@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sofas | cozy cabin & co</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">COZY CABIN & CO</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">The Experience</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html" class="active">Shop Now</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Sofas</h1>
+  <p>
+    Elegant seating pieces selected to bring warmth, comfort, and refinement into beautifully designed living spaces.
+  </p>
+</section>
+
+<section class="intro intro-narrow fade-section">
+  <h2>Comfort, Character, and Timeless Appeal</h2>
+  <p>
+    Our sofa and lounge seating selections are curated to balance visual elegance with everyday comfort. Each piece is chosen to complement interiors that feel soft, elevated, and intentional.
+  </p>
+</section>
+
+<section class="gallery-grid fade-section">
+  <img src="images/collections/1/img1.jpg" alt="Sofa collection 1">
+  <img src="images/collections/1/img2.jpg" alt="Sofa collection 2">
+  <img src="images/collections/1/img3.jpg" alt="Sofa collection 3">
+  <img src="images/collections/1/img4.jpg" alt="Sofa collection 4">
+  <img src="images/collections/1/img5.jpg" alt="Sofa collection 5">
+  <img src="images/collections/1/img6.jpg" alt="Sofa collection 6">
+  <img src="images/collections/1/img7.jpg" alt="Sofa collection 7">
+  <img src="images/collections/1/img8.jpg" alt="Sofa collection 8">
+  <img src="images/collections/1/img9.jpg" alt="Sofa collection 9">
+</section>
+
+<section class="soft-section fade-section">
+  <div class="section-head">
+    <h2>Tailored to Your Interior Needs</h2>
+    <p>
+      Our collection can be customized to suit your preferred dimensions, finishes, and project requirements for residential, hospitality, and commercial use.
+    </p>
+  </div>
+
+  <div class="hero-buttons" style="justify-content:center;">
+    <a href="contact.html" class="primary-btn">Request Consultation</a>
+    <a href="shop.html" class="secondary-btn" style="color:var(--text-dark); border-color:var(--line);">Back to Collection</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h3>cozy cabin & co</h3>
+      <p>+234 902 959 4100</p>
+      <p>info@cozycabinspaces.com</p>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">The Experience</a></p>
+      <p><a href="portfolio.html">Portfolio</a></p>
+      <p><a href="shop.html">Shop Now</a></p>
+    </div>
+
+    <div>
+      <h3>Consultation</h3>
+      <p>Book a private design consultation.</p>
+      <a href="contact.html" class="primary-btn">Book Now</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 cozy cabin & co. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/2349029594100" class="whatsapp-chat" target="_blank">💬</a>
+
+<script>
+const sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+
+    if (position < screenPosition) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
